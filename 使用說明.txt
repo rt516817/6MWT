@@ -1,0 +1,22 @@
+6MWT 六分鐘步行測試 PWA 部署說明
+
+內含：index.html（原計算介面及公式）、manifest.webmanifest、sw.js、icons/。
+
+【部署 GitHub Pages】
+1. 登入 GitHub，建立新的 Repository，例如 6mwt-calculator。
+2. 上傳本資料夾內的所有檔案與 icons 資料夾（index.html 必須放在倉庫根目錄）。
+3. Repository → Settings → Pages → Build and deployment → Deploy from a branch。
+4. 選 main、/(root)，儲存。部署成功後開啟 GitHub Pages HTTPS 網址。
+5. iPhone：Safari 開啟網址 → 分享 → 加入主畫面；Android：Chrome 開啟網址 → 選單 → 安裝應用程式／新增至主畫面。
+6. 安裝及首次成功載入需要網路；離線前先開啟一次並測試飛航模式。
+
+【隱私】
+此計算器沒有傳送病人資訊到伺服器的程式碼，也不儲存輸入資料。
+GitHub Pages 網站網址可被他人存取，不屬於帳號驗證的私人網站。請勿輸入病人識別資料。
+若需只有特定人可用，需另行選擇具存取管制的主機或內部部署。
+
+【更新】
+更動計算器後，請把 sw.js 裡的 CACHE 版本（sixmwt-v1）遞增，重新部署後使用者連網重開更新。
+
+【注意】
+直接雙擊 index.html（file://）僅能像一般單機網頁運算，無法安裝完整 PWA，也無法註冊 Service Worker。

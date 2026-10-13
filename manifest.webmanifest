@@ -1,0 +1,15 @@
+{
+  "name": "六分鐘步行測試計算器",
+  "short_name": "6MWT",
+  "description": "六分鐘步行測試單機離線計算",
+  "lang": "zh-Hant",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#edf4f7",
+  "theme_color": "#153f56",
+  "icons": [
+    {"src":"./icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"./icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}
